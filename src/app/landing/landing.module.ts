@@ -1,5 +1,3 @@
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -13,8 +11,6 @@ import { MainComponent } from './main/main.component';
   imports: [
     CommonModule,
     LandingRoutingModule,
-    MatIconModule,
-    MatButtonModule,
   ],
   exports: [LandingComponent]
 })

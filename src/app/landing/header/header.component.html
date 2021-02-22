@@ -1,0 +1,16 @@
+<div class="header">
+  <a href="#" class="logo">
+    <img src="../../../assets/imgs/golf.logo.png" alt="Golf Logo">
+    <span>Golf</span>
+  </a>
+  <ul class="links" *ngIf="!mobileView">
+    <li class="link" *ngFor="let link of links">
+      <a href="#">
+        {{link.name}}
+      </a>
+      <i class="fas fa-caret-down expand" *ngIf="link.subLinks"></i>
+    </li>
+  </ul>
+  <i class="fas fa-bars" *ngIf="mobileView"></i>
+</div>
+

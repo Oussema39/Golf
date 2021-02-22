@@ -1,0 +1,16 @@
+<main class="flex">
+  <div class="section col">
+    <h1 class="text"><span>Join</span> our <strong>community</strong> for more <strong>Golf</strong> info</h1>
+  </div>
+  <form class="join-us col flex">
+    <h2>Join Now</h2>
+    <p>Lorem ipsum dolor sit amet consect, adipisicing elit. Iure, reprehenderit.</p>
+    <div class="form-fields">
+        <div class="form-field" *ngFor="let field of fields">
+          <label for={{field.label}}>{{field.label}}</label>
+          <input type={{field.type}} placeholder={{field.placeHolder}} >
+        </div>
+        <button type="submit">Submit</button>
+    </div>
+  </form>
+</main>

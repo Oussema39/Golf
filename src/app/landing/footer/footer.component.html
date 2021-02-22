@@ -1,0 +1,27 @@
+<footer >
+  <div class="pars ">
+    <div *ngFor="let par of pars" class="par">
+      <h4>{{par.title | uppercase}}</h4>
+      <span *ngFor="let c of par.content">
+        {{c}}
+      </span>
+    </div>
+  </div>
+  <div class="social">
+    <div class="message">
+      <label for="message"><span id="message">Message Us : </span></label>
+      <input type="text" placeholder="Type here ..." autocomplete="off"/>
+    </div>
+    <div class="socials">
+      <span *ngFor="let field of fields">{{field}}</span>
+      <div class="social-icons">
+        <i *ngFor="let icon of icons" class="fab fa-{{icon}}-square"></i>
+      </div>
+    </div>
+  </div>
+  <hr>
+    <div class="rights">
+      <p class="copy"><i class="far fa-copyright"></i> Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eos?</p>
+    </div>
+</footer>

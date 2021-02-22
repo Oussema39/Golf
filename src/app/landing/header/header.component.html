@@ -11,6 +11,17 @@
       <i class="fas fa-caret-down expand" *ngIf="link.subLinks"></i>
     </li>
   </ul>
-  <i class="fas fa-bars" *ngIf="mobileView"></i>
+  <i (click)="sideNav(side)" class="fas fa-bars" *ngIf="mobileView"></i>
+  <nav #side class="side">
+    <ul class="side-links" *ngIf="mobileView">
+      <li class="link" *ngFor="let link of links">
+        <a href="#">
+          {{link.name}}
+        </a>
+        <i class="fas fa-caret-down expand" *ngIf="link.subLinks"></i>
+      </li>
+    </ul>
+  </nav>
 </div>
-
+<!--
+<i class="fas fa-times"></i> -->

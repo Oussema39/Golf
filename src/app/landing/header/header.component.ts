@@ -20,6 +20,17 @@ export class HeaderComponent implements OnInit {
     })
   }
 
+  sideNav(side){
+    if (!this.toggled){
+      side.style.transform = "translateX(0)";
+    }else{
+      side.style.transform = "translateX(100%)";
+    }
+    this.toggled = !this.toggled;
+  }
+
+  toggled = false;
+
   mobileView:boolean;
 
 }
